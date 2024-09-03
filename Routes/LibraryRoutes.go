@@ -11,4 +11,5 @@ func LibraryRoutes() {
 	http.HandleFunc("/AllLibrary", controllers.AllLibrary)
 	http.HandleFunc("/AllLibrarydetails", controllers.AllLibrarydetails)
 	http.HandleFunc("/CreateLibrary", controllers.CreateLibrary)
+	http.HandleFunc("/DeleteLibrary/{id}", controllers.DeleteLibrary)
 }
